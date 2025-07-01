@@ -43,21 +43,3 @@ function toggleTheme() {
 }
 
 // Contact form fake handler
-function handleSubmit(event) {
-  event.preventDefault();
-  alert("Thanks for reaching out! Your message has been sent.");
-  event.target.reset();
-  return false;
-}
- const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('section').forEach(section => {
-    observer.observe(section);
-  });

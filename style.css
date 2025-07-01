@@ -12,6 +12,7 @@
   --navbar-bg: #1e1e1e;
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -147,6 +148,10 @@ section h2 {
 .projects {
   display: grid;
   gap: 1.5rem;
+}
+
+a{
+        color: var(--hover);
 }
 
 .card {

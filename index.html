@@ -115,7 +115,8 @@
 
 <section id="contact">
   <h2>Contact Me</h2>
-  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="return handleSubmit(event)">
+  <form class="contact-form" action="https://api.web3forms.com/submit"  method="POST" >
+        <input type="hidden" name="access_key" value="909b34c2-58af-4643-bb52-ec1338430853">
     <input type="text" name="name" placeholder="Your Name" required />
     <input type="email" name="email" placeholder="Your Email" required />
     <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
