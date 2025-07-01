@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayushi Tiwari | Web Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="fade-in" style="background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed; background-size: cover;">
+
+<header>
+  <div class="logo"><strong>Ayushi Tiwari</strong></div>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <nav id="navbar">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#skills">skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="theme-toggle" onclick="toggleTheme()">🌓</div>
+</header>
+
+<section class="hero">
+  <img src="aayu_img.jpg" alt="Ayushi Tiwari" />
+  <div class="intro">
+    <h1>Hello, I'm Ayushi</h1>
+    <p><span id="typing"></span></p>
+    <a href="Ayushi_Resume.pdf" download class="resume-btn">Download Resume</a>
+    <div class="social-icons" style="margin-top: 1rem;">
+      <a href="https://github.com/ayushitiwari7247" target="_blank" title="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" height="24" />
+      </a>
+      <a href="https://linkedin.com/in/ayushi-tiwari-04120325b" target="_blank" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" height="24" />
+      </a>
+      <a href="mailto:ayushitiwari565@gmail.com" title="Email">
+        <img src="https://img.icons8.com/color/48/gmail--v1.png" alt="Gmail" height="24" />
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Frontend Developer with hands-on experience in designing and developing responsive, user-centric websites using modern web technologies. Proficient in React.js, Tailwind CSS, and JavaScript, with a strong eye for UI/UX best practices and cross-browser compatibility. Adept at transforming Figma designs into pixel-perfect web pages and integrating RESTful APIs.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3><a href="https://skillyuvam.com" target="_blank">Skillyuvam.com 🔗</a></h3>
+      <p>HTML, CSS, Bootstrap, JavaScript, PHP</p>
+      <p>Built a responsive educational portal, added backend form validation, and dynamic content updates.</p>
+    </div>
+    <div class="card">
+      <h3><a href="https://citrontours.ae" target="_blank">CitronTours.ae 🔗</a></h3>
+      <p>WordPress, HTML, CSS</p>
+      <p>Customized a travel booking site with sliders, speed optimization, and branding via custom CSS.</p>
+    </div>
+    <div class="card">
+      <h3><a href="https://mufinacademy.com" target="_blank">MufinAcademy.com 🔗</a></h3>
+      <p>React.js, Tailwind CSS, JavaScript</p>
+      <p>Built modular UI, integrated APIs, added course filtering, and authentication components.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>🎓 Master of Computer Application (MCA)</h3>
+      <p><strong>College:</strong> Shri Ram Institute of Technology (SRIT)</p>
+      <p><strong>University:</strong> Rajiv Gandhi Proudyogiki Vishwavidyalaya (R.G.P.V)</p>
+      <p><strong>Duration:</strong> 2022 – 2024</p>
+      <p><strong>CGPA:</strong> 8.4</p>
+    </div>
+    <div class="card">
+      <h3>🎓 Bachelor of Computer Applications (BCA)</h3>
+      <p><strong>College:</strong> Nachiketa College of Computer Science, Commerce & Advanced Technology</p>
+      <p><strong>University:</strong> Rani Durgavati Vishwavidyalaya, Jabalpur M.P.</p>
+      <p><strong>Duration:</strong> 2019 – 2022</p>
+      <p><strong>CGPA:</strong> 7.4</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills & Certifications</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>🛠️ Technical Skills</h3>
+      <ul>
+        <li><strong>Frontend:</strong> <span class="badge">React.js</span> <span class="badge">HTML5</span> <span class="badge">CSS3</span> <span class="badge">JavaScript (ES6+)</span> <span class="badge">Tailwind CSS</span> <span class="badge">Bootstrap</span> <span class="badge">jQuery</span> <span class="badge">WordPress</span></li>
+        <li><strong>Backend:</strong> <span class="badge">PHP</span> <span class="badge">RESTful APIs</span></li>
+        <li><strong>Database:</strong> <span class="badge">MySQL</span> <span class="badge">SQL</span></li>
+        <li><strong>DevOps & Tools:</strong> <span class="badge">Git</span> <span class="badge">GitHub</span> <span class="badge">Jenkins</span></li>
+        <li><strong>Design & Development:</strong> <span class="badge">Figma to Code Conversion</span> <span class="badge">Responsive Design</span> <span class="badge">OOP</span></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>📜 Certifications</h3>
+      <ul>
+        <li>SQL Certification – University of Michigan (Coursera)</li>
+        <li>SQL (Basic) – HackerRank</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="return handleSubmit(event)">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <div class="social-icons">
+    <a href="https://github.com/ayushitiwari7247" target="_blank" title="GitHub">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" height="24" />
+    </a>
+    <a href="https://linkedin.com/in/ayushi-tiwari-04120325b" target="_blank" title="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" height="24" />
+    </a>
+    <a href="mailto:ayushitiwari565@gmail.com" title="Email">
+      <img src="https://img.icons8.com/color/48/gmail--v1.png" alt="Gmail" height="24" />
+    </a>
+  </div>
+  <p>&copy; 2025 Ayushi Tiwari</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
